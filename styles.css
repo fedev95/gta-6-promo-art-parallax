@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+#container {
+  height: 100vh;
+  position: relative;
+  transform: scale(1.025);
+}
+
+#bg {
+  background-image: url(./images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 115vh;
+}
+
+#left-palms {
+  background-image: url(./images/left-palms.png);
+  background-position: 100% 36%;
+  background-size: 154vh;
+  left: 0;
+}
+
+#right-palms {
+  background-image: url(./images/right-palms.png);
+  background-position: 0 30%;
+  background-size: 135vh;
+  right: 0;
+}
+
+.palms {
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 35vw;
+}
+
+@media (max-width: 1170px) {
+
+  #bg {
+    background-position: 55% 50%;
+  }
+
+  #left-palms {
+    background-position: 100% 24%;
+    background-size: 120vh;
+    width: 30%;
+  }
+
+  #right-palms {
+    background-position: 0 25%;
+    background-size: 110vh;
+  }
+}
+
+@media (min-aspect-ratio: 21/6) {
+  #bg {
+    background-position: 0 60%;
+  }
+}
